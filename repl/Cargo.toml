@@ -1,0 +1,20 @@
+[package]
+name = "chat-repl"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sheyla Leyva"]
+description = "First Try - Rust AI"
+license = "Apache-2.0"
+keywords = ["ai", "rust"]
+
+[dependencies]
+anyhow = "1"
+dotenvy = "0.15"
+env_logger = "0.11"
+llm = "~1.3"
+log = "0.4"
+rustyline = "14"
+tokio = { version = "1", features = ["full"] }
+
+[features]
+api-llm-key = []

@@ -1,0 +1,20 @@
+[package]
+name = "rag"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sheyla Leyva"]
+description = "RAG pipeline - in-memory vector search"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = "1"
+dotenvy = "0.15"
+env_logger = "0.11"
+log = "0.4"
+# rig-core published as "rig-core" on crates.io, aliased to "rig" so imports work as `use rig::...`
+rig = { version = "0", package = "rig-core" }
+rustyline = "14"
+tokio = { version = "1", features = ["full"] }
+
+[features]
+api-llm-key = []
